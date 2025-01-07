@@ -152,6 +152,15 @@ label {
   font-size: 1rem;
   font-family: inherit;
   cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.submit-button:hover {
+  filter: brightness(1.1);
+}
+
+.submit-button:active {
+  filter: brightness(0.9);
 }
 
 .login-text a {
