@@ -3,12 +3,54 @@
   src: url('./fonts/Norse-Bold.otf') format('opentype');
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Left container styles */
+.left-container {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: url('./images/bg.jpg') no-repeat center;
+  background-size: cover;
+  color: #F9F6EE;
+  min-width: 280px;
+}
+
+.logo-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  margin-block: auto;
 }
 
 .logo-container h1 {
+  padding: 0;
+  margin: 0;
   font-family: 'Norse Bold', Arial, sans-serif;
-  font-size: 5em;  
+  font-size: 5em;
+}
+
+.image-author {
+  margin-block: auto 0;
+}
+
+/* Right container styles */
+.right-container {
+  flex: 2;
+  background: #f4f4f4;
+  padding: 20px;
 }
