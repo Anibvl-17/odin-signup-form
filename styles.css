@@ -3,6 +3,7 @@
   src: url('./fonts/Norse-Bold.otf') format('opentype');
 }
 
+/* General styles */
 html {
   height: 100%;
 }
@@ -10,9 +11,13 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   display: flex;
   flex-flow: row wrap;
+}
+
+.italics {
+  font-style: italic;
 }
 
 /* Left container styles */
@@ -23,8 +28,8 @@ body {
   align-items: center;
   background: url('./images/bg.jpg') no-repeat center;
   background-size: cover;
-  color: #F9F6EE;
-  min-width: 280px;
+  min-width: 320px;
+  color: white;
 }
 
 .logo-container {
@@ -41,16 +46,100 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Norse Bold', Arial, sans-serif;
-  font-size: 5em;
+  font-size: 5rem;
 }
 
 .image-author {
   margin-block: auto 0;
 }
 
+.image-author a {
+  color: white;
+}
+
 /* Right container styles */
 .right-container {
   flex: 2;
-  background: #f4f4f4;
-  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: #f3f4f5;
+}
+
+.description-text {
+  max-width: 50ch;
+}
+
+.description-text,
+.submit-button,
+.login-text {
+  margin-inline: 3rem;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  padding: 0 48px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-block: 1.5rem;
+  background-color: white;
+}
+
+/* Normalize font family in form elements */
+form * {
+  font-family: inherit;
+}
+
+.form-title {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+form div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.password-container {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 16rem;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  border: 0.14rem solid #E5E7EB;
+  border-radius: 0.2rem;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #737982;
+}
+
+.submit-button {
+  background-color: #596d48;
+  color: white;
+  border: 0;
+  border-radius: 0.6rem;
+  box-shadow: 0px 8px 3px -3px rgba(0,0,0,0.1);
+  padding: 0.8rem 3rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.login-text a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
 }
