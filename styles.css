@@ -1,4 +1,14 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('./fonts/Norse-Bold.otf') format('opentype');
+}
+
 body {
-    margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.logo-container h1 {
+  font-family: 'Norse Bold', Arial, sans-serif;
+  font-size: 5em;  
 }
