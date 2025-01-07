@@ -34,35 +34,56 @@
   </div>
   <!-- Right container: form -->
   <div class="right-container">
-    <h3>
+    <h2 class="description-text">
       This is not a real online service! You know you need something like
       this in your life to help you realize your deepest dreams.
       Sign up now to get started.
       <br><br>
       You know you want to.
-    </h3>
-    <form action="#">
+    </h2>
+    <form action="#" id="form">
+      <h2 class="form-title">Let's do this!</h2>
       <div class="name-container">
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name" placeholder="Thor">
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+        <p>
+          <label for="first-name">First Name</label>
+          <br>
+          <input type="text" name="first-name" id="first-name" placeholder="Thor">
+        </p>
+        <p>
+          <label for="last-name">Last Name</label>
+          <br>
+          <input type="text" name="last-name" id="last-name" placeholder="Odinson">
+        </p>
       </div>
       <div class="contact-container">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" placeholder="thor@odin.com">
-        <label for="phone">Phone</label>
-        <input type="text" name="phone" id="phone" placeholder="123-456-7890">
+        <p>
+          <label for="email">Email</label>
+          <br>
+          <input type="text" name="email" id="email" placeholder="thor@odin.com">
+        </p>
+        <p>
+          <label for="phone">Phone</label>
+          <br>
+          <input type="text" name="phone" id="phone" placeholder="123-456-7890">
+        </p>
       </div>
       <div class="password-container">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" name="confirm-password" id="confirm-password">
+        <p>
+          <label for="password">Password</label>
+          <br>
+          <input type="password" name="password" id="password">
+        </p>
+        <p>
+          <label for="confirm-password">Confirm Password</label>
+          <br>
+          <input type="password" name="confirm-password" id="confirm-password">
+        </p>
       </div>
     </form>
-    <button type="submit">Create Account</button>
-    <p class="login-in-text">
+    <button type="submit" class="submit-button">
+      Create Account
+    </button>
+    <p class="login-text">
       Already have an account?
       <a href="#">Log in</a>
     </p>
