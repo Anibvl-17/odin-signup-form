@@ -26,9 +26,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  min-width: 320px;
   background: url('./images/bg.jpg') no-repeat center;
   background-size: cover;
-  min-width: 320px;
   color: white;
 }
 
@@ -51,6 +51,7 @@ body {
 }
 
 .image-author {
+  font-size: 0.8rem;
   margin-block: auto 0;
 }
 
@@ -64,6 +65,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  min-width: 320px;
   background-color: #f3f4f5;
 }
 
@@ -100,8 +102,10 @@ form * {
 form div {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  gap: 3rem;
+}
+
+form div p {
+  margin-right: 3em;
 }
 
 .password-container {
