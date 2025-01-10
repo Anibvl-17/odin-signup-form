@@ -17,14 +17,17 @@ phoneInput.addEventListener('input', function() {
   }
 });
 
-const nameInput = document.getElementById('name');
-nameInput.addEventListener('input', function() {
-  if (nameInput.validity.tooShort) {
-    nameInput.setCustomValidity('Name must be at least 2 characters long');
-  } else if (nameInput.validity.tooLong) {
-    nameInput.setCustomValidity('Name must be at most 30 characters long');
+// Name and Last name already have built-in messages
+// So just to practice, I will add custom messages
+
+const firstNameInput = document.getElementById('first-name');
+firstNameInput.addEventListener('input', function() {
+  if (firstNameInput.validity.tooShort) {
+    firstNameInput.setCustomValidity('Name must be at least 2 characters long');
+  } else if (firstNameInput.validity.tooLong) {
+    firstNameInput.setCustomValidity('Name must be at most 30 characters long');
   } else {
-    nameInput.setCustomValidity('');
+    firstNameInput.setCustomValidity('');
   }
 });
 
